@@ -1,56 +1,218 @@
-Politique de confidentialité
-TempoLog — suivi d'heures de travail
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — TempoLog</title>
+<style>
+  :root{
+    --card:#ffffff; --ink:#1a1d2e; --muted:#6b7280;
+    --brand:#2E6CF0; --brand2:#6C8FFF; --line:#e8ebf3; --soft:#f5f7ff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    margin:0;color:var(--ink);line-height:1.65;
+    background:linear-gradient(180deg,#eef2ff 0%,#f7f9fc 320px,#f7f9fc 100%);
+  }
+  .wrap{max-width:780px;margin:0 auto;padding:0 18px 64px}
+  header{
+    background:radial-gradient(1200px 400px at 50% -150px,#3b62ff 0%,#1f2a6b 60%,#0f1226 100%);
+    color:#fff;padding:46px 18px 64px;text-align:center;position:relative;
+  }
+  .logo{width:78px;height:78px;margin:0 auto 16px;display:block;
+    filter:drop-shadow(0 8px 20px rgba(0,0,0,.35))}
+  header h1{margin:0;font-size:1.7rem;font-weight:700;letter-spacing:-.3px}
+  header .sub{margin:8px 0 0;opacity:.85;font-size:.95rem}
+  .date{display:inline-block;margin-top:14px;font-size:.8rem;
+    background:rgba(255,255,255,.14);padding:5px 12px;border-radius:999px}
+  .lang{display:flex;gap:8px;justify-content:center;margin:-26px auto 26px;position:relative;z-index:2}
+  .lang button{
+    border:none;cursor:pointer;font-weight:600;font-size:.9rem;
+    padding:10px 22px;border-radius:999px;background:#fff;color:var(--brand);
+    box-shadow:0 6px 18px rgba(31,42,107,.16);transition:.18s;
+  }
+  .lang button.active{background:var(--brand);color:#fff}
+  .lang button:hover{transform:translateY(-1px)}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:22px 24px;margin:16px 0;box-shadow:0 4px 24px rgba(20,30,80,.05);
+  }
+  .lead{font-size:1.05rem}
+  h2{font-size:1.12rem;color:var(--ink);margin:.2em 0 .5em;display:flex;align-items:center;gap:10px}
+  h2 .ic{flex:0 0 auto;width:26px;height:26px;display:grid;place-items:center;
+    background:var(--soft);border-radius:8px}
+  ul{margin:.4em 0;padding-left:1.2em}
+  li{margin:.25em 0}
+  code{background:var(--soft);color:#2440b0;padding:1px 6px;border-radius:5px;font-size:.88em}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .pill{display:inline-block;background:#e9f7ef;color:#137a3e;font-weight:600;
+    font-size:.8rem;padding:3px 10px;border-radius:999px}
+  .contact{background:linear-gradient(135deg,#2E6CF0,#6C8FFF);color:#fff;text-align:center}
+  .contact h2{color:#fff;justify-content:center}
+  .contact a{color:#fff;font-weight:700;text-decoration:underline}
+  footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:30px}
+  .en{display:none}
+</style>
+</head>
+<body>
 
-Dernière mise à jour : 2 juin 2026
-Français
-English
-TempoLog est une application de pointage personnel. Les données que vous saisissez (horaires, pauses, congés, commentaires, sociétés, lieux) restent sur votre appareil et ne sont jamais envoyées à un serveur de l'éditeur. L'application affiche cependant des publicités fournies par Google AdMob, qui utilisent un identifiant publicitaire et nécessitent un accès réseau.
+<header>
+  <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="50" cy="50" r="46" fill="#1b2456" stroke="#6C8FFF" stroke-width="5"/>
+    <circle cx="50" cy="50" r="3.6" fill="#fff"/>
+    <line x1="50" y1="50" x2="50" y2="26" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <line x1="50" y1="50" x2="68" y2="58" stroke="#6C8FFF" stroke-width="5" stroke-linecap="round"/>
+  </svg>
+  <h1>Politique de confidentialité</h1>
+  <p class="sub">TempoLog — suivi d'heures de travail</p>
+  <span class="date" id="date">Dernière mise à jour : 2 juin 2026</span>
+</header>
 
-📋
-Données stockées localement
-TempoLog enregistre uniquement sur votre appareil :
+<div class="lang">
+  <button id="btn-fr" class="active" onclick="setLang('fr')">Français</button>
+  <button id="btn-en" onclick="setLang('en')">English</button>
+</div>
 
-Horaires de début/fin, durées des pauses (matin, repas, après-midi)
-Type d'activité (présentiel, télétravail, formation, congé payé, RTT, maladie, jour férié, week-end, activité personnalisée)
-Société et lieu de travail si vous les renseignez
-Commentaires libres, modèles de semaine et activités personnalisées
-Paramètres (cible horaire, langue, thème, pays pour les jours fériés)
-Ces données ne sont pas transmises à l'éditeur ni à un tiers. Elles sont stockées dans une base locale (SQLite/Room) isolée dans l'espace privé de l'application, chiffrée au repos par Android sur les appareils récents.
+<div class="wrap">
 
-📢
-Publicités (Google AdMob)
-L'application est gratuite et financée par des publicités fournies par Google AdMob. Pour diffuser ces annonces, le SDK AdMob peut collecter et traiter :
+  <!-- ============ FRANÇAIS ============ -->
+  <div class="fr">
+    <div class="card">
+      <p class="lead" style="margin:0">TempoLog est une application de pointage personnel. Les données que vous saisissez (horaires, pauses, congés, commentaires, sociétés, lieux) restent <strong>sur votre appareil</strong> et ne sont jamais envoyées à un serveur de l'éditeur. L'application affiche cependant des <strong>publicités fournies par Google AdMob</strong>, qui utilisent un identifiant publicitaire et nécessitent un accès réseau.</p>
+    </div>
 
-un identifiant publicitaire de l'appareil ;
-des données techniques (type d'appareil, données approximatives liées à la diffusion des annonces).
-Ces données sont traitées par Google conformément à sa propre politique : policies.google.com/privacy. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un écran de consentement (Google UMP) vous est présenté avant toute diffusion d'annonces personnalisées. Vous pouvez à tout moment revoir vos choix dans Paramètres → Confidentialité publicitaire de l'application.
+    <div class="card">
+      <h2><span class="ic">📋</span> Données stockées localement</h2>
+      <p>TempoLog enregistre uniquement sur votre appareil :</p>
+      <ul>
+        <li>Horaires de début/fin, durées des pauses (matin, repas, après-midi)</li>
+        <li>Type d'activité (présentiel, télétravail, formation, congé payé, RTT, maladie, jour férié, week-end, activité personnalisée)</li>
+        <li>Société et lieu de travail si vous les renseignez</li>
+        <li>Commentaires libres, modèles de semaine et activités personnalisées</li>
+        <li>Paramètres (cible horaire, langue, thème, pays pour les jours fériés)</li>
+      </ul>
+      <p>Ces données <strong>ne sont pas transmises</strong> à l'éditeur ni à un tiers. Elles sont stockées dans une base locale (SQLite/Room) isolée dans l'espace privé de l'application, chiffrée au repos par Android sur les appareils récents.</p>
+    </div>
 
-☁️
-Sauvegarde et exports
-Déclenchés par vous uniquement :
+    <div class="card">
+      <h2><span class="ic">📢</span> Publicités (Google AdMob)</h2>
+      <p>L'application est gratuite et financée par des publicités fournies par <strong>Google AdMob</strong>. Pour diffuser ces annonces, le SDK AdMob peut collecter et traiter :</p>
+      <ul>
+        <li>un <strong>identifiant publicitaire</strong> de l'appareil ;</li>
+        <li>des données techniques (type d'appareil, données approximatives liées à la diffusion des annonces).</li>
+      </ul>
+      <p>Ces données sont traitées par Google conformément à sa propre politique : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un écran de consentement (<strong>Google UMP</strong>) vous est présenté avant toute diffusion d'annonces personnalisées. Vous pouvez à tout moment revoir vos choix dans <em>Paramètres → Confidentialité publicitaire</em> de l'application.</p>
+    </div>
 
-Sauvegarde automatique optionnelle : vous choisissez un dossier synchronisé (Google Drive, Dropbox, OneDrive…) où l'app réécrit une copie de vos données. Désactivée par défaut.
-Exports manuels : historique exportable en PDF, CSV ou JSON vers l'emplacement de votre choix.
-🔐
-Permissions demandées
-Internet / réseau (INTERNET, ACCESS_NETWORK_STATE) : uniquement pour charger les publicités AdMob.
-Notifications (POST_NOTIFICATIONS) : rappel quotidien de saisie, si activé.
-Alarmes exactes (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM) : déclencher le rappel à l'heure choisie.
-Démarrage de l'appareil (RECEIVE_BOOT_COMPLETED) : reprogrammer le rappel après un redémarrage.
-Aucune permission de localisation, contacts, fichiers personnels, caméra ou microphone n'est demandée.
+    <div class="card">
+      <h2><span class="ic">☁️</span> Sauvegarde et exports</h2>
+      <p>Déclenchés par vous uniquement :</p>
+      <ul>
+        <li><strong>Sauvegarde automatique optionnelle</strong> : vous choisissez un dossier synchronisé (Google Drive, Dropbox, OneDrive…) où l'app réécrit une copie de vos données. Désactivée par défaut.</li>
+        <li><strong>Exports manuels</strong> : historique exportable en PDF, CSV ou JSON vers l'emplacement de votre choix.</li>
+      </ul>
+    </div>
 
-⚖️
-Vos droits
-Consulter / modifier : toutes vos données sont visibles et éditables dans l'application.
-Exporter : Paramètres → Sauvegarde (JSON / CSV / PDF).
-Supprimer : désinstaller l'application efface la base locale.
-Publicité : gérer ou retirer votre consentement via Paramètres → Confidentialité publicitaire.
-🧒
-Enfants
-L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte aucune donnée visant à identifier un mineur. La date en haut reflète la dernière version
+    <div class="card">
+      <h2><span class="ic">🔐</span> Permissions demandées</h2>
+      <ul>
+        <li><strong>Internet / réseau</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) : uniquement pour charger les publicités AdMob.</li>
+        <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>) : rappel quotidien de saisie, si activé.</li>
+        <li><strong>Alarmes exactes</strong> (<code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>) : déclencher le rappel à l'heure choisie.</li>
+        <li><strong>Démarrage de l'appareil</strong> (<code>RECEIVE_BOOT_COMPLETED</code>) : reprogrammer le rappel après un redémarrage.</li>
+      </ul>
+      <p>Aucune permission de localisation, contacts, fichiers personnels, caméra ou microphone n'est demandée.</p>
+    </div>
 
-✉️
-Contact
-Pour toute question : mjdboutiquestore@gmail.com
+    <div class="card">
+      <h2><span class="ic">⚖️</span> Vos droits</h2>
+      <ul>
+        <li><strong>Consulter / modifier</strong> : toutes vos données sont visibles et éditables dans l'application.</li>
+        <li><strong>Exporter</strong> : Paramètres → Sauvegarde (JSON / CSV / PDF).</li>
+        <li><strong>Supprimer</strong> : désinstaller l'application efface la base locale.</li>
+        <li><strong>Publicité</strong> : gérer ou retirer votre consentement via Paramètres → Confidentialité publicitaire.</li>
+      </ul>
+    </div>
 
-© 2026 TempoLog · mjdboutiquestore@gmail.com
+    <div class="card">
+      <h2><span class="ic">🧒</span> Enfants</h2>
+      <p>L'application n'est pas destinée aux enfants de moins de 13 ans et ne collecte aucune donnée visant à identifier un mineur. <span class="pill">La date en haut reflète la dernière version</span></p>
+    </div>
+
+    <div class="card contact">
+      <h2><span class="ic" style="background:rgba(255,255,255,.2)">✉️</span> Contact</h2>
+      <p style="margin:0">Pour toute question : <a href="mailto:mjdboutiquestore@gmail.com">mjdboutiquestore@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <div class="en">
+    <div class="card">
+      <p class="lead" style="margin:0">TempoLog is a personal time-tracking app. The data you enter (hours, breaks, leave, comments, companies, locations) stays <strong>on your device</strong> and is never sent to the developer's servers. However, the app shows <strong>ads provided by Google AdMob</strong>, which use an advertising identifier and require network access.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">📋</span> Data stored locally</h2>
+      <p>TempoLog stores only on your device: start/end times, break durations, activity types, company and work location (if provided), free-text comments, week templates, custom activities, and app settings. This data is <strong>not sent</strong> to the developer or any third party. It lives in a local SQLite (Room) database inside the app's private sandbox, encrypted at rest on recent Android devices.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">📢</span> Ads (Google AdMob)</h2>
+      <p>The app is free and funded by ads provided by <strong>Google AdMob</strong>. To serve ads, the AdMob SDK may collect and process an <strong>advertising identifier</strong> and technical data (device type, approximate ad-delivery data). This is handled by Google under its own policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. In the EEA, UK and Switzerland, a consent screen (<strong>Google UMP</strong>) is shown before any personalized ads. You can review your ad choices anytime in <em>Settings → Ad privacy</em>.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">☁️</span> Backup and exports</h2>
+      <p>Triggered by you only:</p>
+      <ul>
+        <li><strong>Optional automatic backup</strong>: pick a synced folder (Google Drive, Dropbox, OneDrive…) where the app rewrites a copy of your data. Disabled by default.</li>
+        <li><strong>Manual exports</strong>: export your history to PDF, CSV or JSON to a location you choose.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">🔐</span> Permissions</h2>
+      <ul>
+        <li><strong>Internet / network</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): only to load AdMob ads.</li>
+        <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): optional daily reminder.</li>
+        <li><strong>Exact alarms</strong> (<code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>): fire the reminder at the chosen time.</li>
+        <li><strong>Boot completed</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): reschedule the reminder after a restart.</li>
+      </ul>
+      <p>No location, contacts, files, camera or microphone permission is requested.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">⚖️</span> Your rights</h2>
+      <p>View/edit your data in the app; export it from Settings → Backup; delete it by uninstalling (also remove any cloud backup you created); manage ad consent in Settings → Ad privacy.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="ic">🧒</span> Children</h2>
+      <p>The app is not directed at children under 13 and does not collect data that would identify a minor.</p>
+    </div>
+
+    <div class="card contact">
+      <h2><span class="ic" style="background:rgba(255,255,255,.2)">✉️</span> Contact</h2>
+      <p style="margin:0">For any question: <a href="mailto:mjdboutiquestore@gmail.com">mjdboutiquestore@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>© 2026 TempoLog · mjdboutiquestore@gmail.com</footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.documentElement.lang = l;
+    document.querySelector('.fr').style.display = (l==='fr')?'block':'none';
+    document.querySelector('.en').style.display = (l==='en')?'block':'none';
+    document.getElementById('btn-fr').classList.toggle('active', l==='fr');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('date').textContent =
+      (l==='fr') ? "Dernière mise à jour : 2 juin 2026" : "Last updated: June 2, 2026";
+  }
+</script>
+</body>
+</html>
