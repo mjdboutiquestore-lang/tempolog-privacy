@@ -1,116 +1,79 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politique de confidentialité — TempoLog</title>
-<style>
-  body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.6;color:#1a1a2e;background:#fff}
-  h1{font-size:1.6rem;border-bottom:2px solid #6C8FFF;padding-bottom:8px}
-  h2{font-size:1.2rem;color:#2E6CF0;margin-top:1.8em}
-  code{background:#eef;padding:1px 5px;border-radius:4px;font-size:.9em}
-  hr{margin:3em 0;border:none;border-top:1px solid #ddd}
-  .date{color:#666;font-style:italic}
-  a{color:#2E6CF0}
-</style>
-</head>
-<body>
+Politique de confidentialité — TempoLog
+Dernière mise à jour : 1ᵉʳ juin 2026
 
-<h1>Politique de confidentialité — TempoLog</h1>
-<p class="date">Dernière mise à jour : 1ᵉʳ juin 2026</p>
+Résumé
+TempoLog est une application de pointage personnel. Les données que vous saisissez (horaires, pauses, congés, commentaires, sociétés, lieux) restent sur votre appareil : elles ne sont jamais envoyées à un serveur de l'éditeur. L'application affiche cependant des publicités fournies par Google AdMob, qui utilisent un identifiant publicitaire et nécessitent un accès réseau. Cette politique explique précisément ce qui est traité.
 
-<h2>Résumé</h2>
-<p>TempoLog est une application de pointage personnel. Les données que vous saisissez (horaires, pauses, congés, commentaires, sociétés, lieux) restent <strong>sur votre appareil</strong> : elles ne sont jamais envoyées à un serveur de l'éditeur. L'application affiche cependant des <strong>publicités fournies par Google AdMob</strong>, qui utilisent un identifiant publicitaire et nécessitent un accès réseau. Cette politique explique précisément ce qui est traité.</p>
+Données que vous saisissez (stockées localement)
+TempoLog enregistre uniquement sur votre appareil :
 
-<h2>Données que vous saisissez (stockées localement)</h2>
-<p>TempoLog enregistre uniquement sur votre appareil :</p>
-<ul>
-  <li>Horaires de début/fin, durées des pauses (matin, repas, après-midi)</li>
-  <li>Type d'activité (présentiel, télétravail, formation, congé payé, RTT, ROL, maladie, jour férié, week-end, activité personnalisée)</li>
-  <li>Société et lieu de travail si vous les renseignez</li>
-  <li>Commentaires libres, modèles de semaine et activités personnalisées</li>
-  <li>Paramètres (cible horaire, langue, thème, pays pour les jours fériés)</li>
-</ul>
-<p>Ces données <strong>ne sont pas transmises</strong> à l'éditeur ni à un tiers. Elles sont stockées dans une base locale (SQLite/Room) isolée dans l'espace privé de l'application, chiffrée au repos par Android sur les appareils récents.</p>
+Horaires de début/fin, durées des pauses (matin, repas, après-midi)
+Type d'activité (présentiel, télétravail, formation, congé payé, RTT, ROL, maladie, jour férié, week-end, activité personnalisée)
+Société et lieu de travail si vous les renseignez
+Commentaires libres, modèles de semaine et activités personnalisées
+Paramètres (cible horaire, langue, thème, pays pour les jours fériés)
+Ces données ne sont pas transmises à l'éditeur ni à un tiers. Elles sont stockées dans une base locale (SQLite/Room) isolée dans l'espace privé de l'application, chiffrée au repos par Android sur les appareils récents.
 
-<h2>Publicités (Google AdMob)</h2>
-<p>L'application est gratuite et financée par des publicités fournies par <strong>Google AdMob</strong>. Pour diffuser ces annonces, le SDK AdMob peut collecter et traiter :</p>
-<ul>
-  <li>un <strong>identifiant publicitaire</strong> de l'appareil ;</li>
-  <li>des données techniques (type d'appareil, données approximatives liées à la diffusion des annonces).</li>
-</ul>
-<p>Ces données sont traitées par Google conformément à sa propre politique : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un écran de consentement (Google UMP) vous est présenté avant toute diffusion d'annonces personnalisées. Vous pouvez à tout moment revoir vos choix publicitaires dans <em>Paramètres → Confidentialité publicitaire</em> de l'application.</p>
+Publicités (Google AdMob)
+L'application est gratuite et financée par des publicités fournies par Google AdMob. Pour diffuser ces annonces, le SDK AdMob peut collecter et traiter :
 
-<h2>Sauvegarde et exports (déclenchés par vous)</h2>
-<ol>
-  <li><strong>Sauvegarde automatique optionnelle</strong> : vous pouvez choisir un dossier synchronisé (Google Drive, Dropbox, OneDrive…) où l'application réécrit une copie de vos données après chaque modification. Cette fonction est désactivée par défaut et n'est active que si vous sélectionnez un dossier.</li>
-  <li><strong>Exports manuels</strong> : vous pouvez exporter votre historique en PDF, CSV ou JSON vers l'emplacement de votre choix.</li>
-</ol>
-<p>Dans les deux cas, le fichier vous appartient et sort du périmètre de l'application.</p>
+un identifiant publicitaire de l'appareil ;
+des données techniques (type d'appareil, données approximatives liées à la diffusion des annonces).
+Ces données sont traitées par Google conformément à sa propre politique : https://policies.google.com/privacy. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un écran de consentement (Google UMP) vous est présenté avant toute diffusion d'annonces personnalisées. Vous pouvez à tout moment revoir vos choix publicitaires dans Paramètres → Confidentialité publicitaire de l'application.
 
-<h2>Permissions demandées</h2>
-<ul>
-  <li><strong>Internet / accès réseau</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>) : nécessaires uniquement au chargement des publicités AdMob.</li>
-  <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>) : rappel quotidien de saisie, si vous l'activez.</li>
-  <li><strong>Alarmes exactes</strong> (<code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>) : pour déclencher le rappel à l'heure choisie.</li>
-  <li><strong>Démarrage de l'appareil</strong> (<code>RECEIVE_BOOT_COMPLETED</code>) : reprogrammer le rappel après un redémarrage.</li>
-</ul>
-<p>Aucune permission de localisation, contacts, fichiers personnels, caméra ou microphone n'est demandée.</p>
+Sauvegarde et exports (déclenchés par vous)
+Sauvegarde automatique optionnelle : vous pouvez choisir un dossier synchronisé (Google Drive, Dropbox, OneDrive…) où l'application réécrit une copie de vos données après chaque modification. Cette fonction est désactivée par défaut et n'est active que si vous sélectionnez un dossier.
+Exports manuels : vous pouvez exporter votre historique en PDF, CSV ou JSON vers l'emplacement de votre choix.
+Dans les deux cas, le fichier vous appartient et sort du périmètre de l'application.
 
-<h2>Vos droits</h2>
-<ul>
-  <li><strong>Consulter / modifier</strong> : toutes vos données sont visibles et éditables dans l'application.</li>
-  <li><strong>Exporter</strong> : depuis Paramètres → Sauvegarde (JSON / CSV / PDF).</li>
-  <li><strong>Supprimer</strong> : désinstaller l'application efface la base locale. Pensez aussi à supprimer toute sauvegarde que vous auriez créée dans votre dossier cloud.</li>
-  <li><strong>Publicité</strong> : gérer ou retirer votre consentement via Paramètres → Confidentialité publicitaire.</li>
-</ul>
+Permissions demandées
+Internet / accès réseau (INTERNET, ACCESS_NETWORK_STATE) : nécessaires uniquement au chargement des publicités AdMob.
+Notifications (POST_NOTIFICATIONS) : rappel quotidien de saisie, si vous l'activez.
+Alarmes exactes (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM) : pour déclencher le rappel à l'heure choisie.
+Démarrage de l'appareil (RECEIVE_BOOT_COMPLETED) : reprogrammer le rappel après un redémarrage.
+Aucune permission de localisation, contacts, fichiers personnels, caméra ou microphone n'est demandée.
 
-<h2>Enfants</h2>
-<p>L'application n'est pas destinée aux enfants de moins de 13 ans.</p>
+Vos droits
+Consulter / modifier : toutes vos données sont visibles et éditables dans l'application.
+Exporter : depuis Paramètres → Sauvegarde (JSON / CSV / PDF).
+Supprimer : désinstaller l'application efface la base locale. Pensez aussi à supprimer toute sauvegarde que vous auriez créée dans votre dossier cloud.
+Publicité : gérer ou retirer votre consentement via Paramètres → Confidentialité publicitaire.
+Enfants
+L'application n'est pas destinée aux enfants de moins de 13 ans.
 
-<h2>Modifications</h2>
-<p>Cette politique pourra évoluer avec l'application ; la date en haut reflète la dernière version.</p>
+Modifications
+Cette politique pourra évoluer avec l'application ; la date en haut reflète la dernière version.
 
-<h2>Contact</h2>
-<p>Pour toute question : <strong>mjdboutiquestore@gmail.com</strong></p>
+Contact
+Pour toute question : mjdboutiquestore@gmail.com
 
-<hr>
+Privacy Policy — TempoLog
+Last updated: June 1, 2026
 
-<h1>Privacy Policy — TempoLog</h1>
-<p class="date">Last updated: June 1, 2026</p>
+Summary
+TempoLog is a personal time-tracking app. The data you enter (hours, breaks, leave, comments, companies, locations) stays on your device and is never sent to the developer's servers. However, the app shows ads provided by Google AdMob, which use an advertising identifier and require network access. This policy explains exactly what is processed.
 
-<h2>Summary</h2>
-<p>TempoLog is a personal time-tracking app. The data you enter (hours, breaks, leave, comments, companies, locations) stays <strong>on your device</strong> and is never sent to the developer's servers. However, the app shows <strong>ads provided by Google AdMob</strong>, which use an advertising identifier and require network access. This policy explains exactly what is processed.</p>
+Data you enter (stored locally)
+TempoLog stores only on your device: start/end times, break durations, activity types, company and work location (if provided), free-text comments, week templates, custom activities, and app settings. This data is not sent to the developer or any third party. It lives in a local SQLite (Room) database inside the app's private sandbox, encrypted at rest on recent Android devices.
 
-<h2>Data you enter (stored locally)</h2>
-<p>TempoLog stores only on your device: start/end times, break durations, activity types, company and work location (if provided), free-text comments, week templates, custom activities, and app settings. This data is <strong>not</strong> sent to the developer or any third party. It lives in a local SQLite (Room) database inside the app's private sandbox, encrypted at rest on recent Android devices.</p>
+Ads (Google AdMob)
+The app is free and funded by ads provided by Google AdMob. To serve ads, the AdMob SDK may collect and process an advertising identifier and technical data (device type, approximate ad-delivery data). This is handled by Google under its own policy: https://policies.google.com/privacy. In the EEA, UK and Switzerland, a consent screen (Google UMP) is shown before any personalized ads. You can review your ad choices anytime in Settings → Ad privacy.
 
-<h2>Ads (Google AdMob)</h2>
-<p>The app is free and funded by ads provided by <strong>Google AdMob</strong>. To serve ads, the AdMob SDK may collect and process an <strong>advertising identifier</strong> and technical data (device type, approximate ad-delivery data). This is handled by Google under its own policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>. In the EEA, UK and Switzerland, a consent screen (Google UMP) is shown before any personalized ads. You can review your ad choices anytime in <em>Settings → Ad privacy</em>.</p>
+Backup and exports (triggered by you)
+Optional automatic backup: you may pick a synced folder (Google Drive, Dropbox, OneDrive…) where the app rewrites a copy of your data after each change. Disabled by default.
+Manual exports: export your history to PDF, CSV or JSON to a location you choose.
+Permissions
+Internet / network (INTERNET, ACCESS_NETWORK_STATE): only to load AdMob ads.
+Notifications (POST_NOTIFICATIONS): optional daily reminder.
+Exact alarms (SCHEDULE_EXACT_ALARM, USE_EXACT_ALARM): fire the reminder at the chosen time.
+Boot completed (RECEIVE_BOOT_COMPLETED): reschedule the reminder after a restart.
+No location, contacts, files, camera or microphone permission is requested.
 
-<h2>Backup and exports (triggered by you)</h2>
-<ol>
-  <li><strong>Optional automatic backup</strong>: you may pick a synced folder (Google Drive, Dropbox, OneDrive…) where the app rewrites a copy of your data after each change. Disabled by default.</li>
-  <li><strong>Manual exports</strong>: export your history to PDF, CSV or JSON to a location you choose.</li>
-</ol>
+Your rights
+View/edit your data in the app; export it from Settings → Backup; delete it by uninstalling (also remove any cloud backup you created); manage ad consent in Settings → Ad privacy.
 
-<h2>Permissions</h2>
-<ul>
-  <li><strong>Internet / network</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>): only to load AdMob ads.</li>
-  <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): optional daily reminder.</li>
-  <li><strong>Exact alarms</strong> (<code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>): fire the reminder at the chosen time.</li>
-  <li><strong>Boot completed</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): reschedule the reminder after a restart.</li>
-</ul>
-<p>No location, contacts, files, camera or microphone permission is requested.</p>
+Children
+The app is not directed at children under 13.
 
-<h2>Your rights</h2>
-<p>View/edit your data in the app; export it from Settings → Backup; delete it by uninstalling (also remove any cloud backup you created); manage ad consent in Settings → Ad privacy.</p>
-
-<h2>Children</h2>
-<p>The app is not directed at children under 13.</p>
-
-<h2>Contact</h2>
-<p>For any question: <strong>mjdboutiquestore@gmail.com</strong></p>
-
-</body>
-</html>
+Contact
+For any question: mjdboutiquestore@gmail.com
